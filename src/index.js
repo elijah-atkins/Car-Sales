@@ -6,12 +6,14 @@ import App from './App';
 
 import 'bulma/css/bulma.css';
 import './styles.scss';
-// import reducer
+// import reducer(s)
 
 
 
 // declare state
 // use createStore and pass in reducer
+// **OPTIONAL** use combineReducers to pass in multiple reducers to createStore
+// combineReducers comes from 'redux'
 
 const rootElement = document.getElementById('root');
 //wrap App with Provider tag

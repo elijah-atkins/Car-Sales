@@ -1,11 +1,13 @@
 import React from 'react';
+// import connect from react-redux
 
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
-
+//import 
 const App = () => {
+  //state data
   const state = {
     additionalPrice: 0,
     car: {
@@ -23,9 +25,11 @@ const App = () => {
     ]
   };
 
+// will be able to get needed data directely from component
+// remove props that pass state into components
   return (
     <div className="boxes">
-      <div className="box">
+      <div className="box">      
         <Header car={state.car} />
         <AddedFeatures car={state.car} />
       </div>
@@ -36,5 +40,12 @@ const App = () => {
     </div>
   );
 };
+// map state to props - car, additionalPrice and additionalFeatures
+
+//use connect 
+// export default connect(
+//   mapStateToProps,
+//   { }
+// )(App);
 
 export default App;
