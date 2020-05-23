@@ -5,7 +5,7 @@ import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
-//import 
+//import any called actions
 const App = () => {
   //state data
   const state = {
@@ -25,8 +25,7 @@ const App = () => {
     ]
   };
 
-// will be able to get needed data directely from component
-// remove props that pass state into components
+
   return (
     <div className="boxes">
       <div className="box">      
