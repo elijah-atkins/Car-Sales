@@ -1,5 +1,6 @@
 import React from 'react';
-
+//import connect
+//declare variables
 const Total = props => {
   return (
     <div className="content">
@@ -7,5 +8,5 @@ const Total = props => {
     </div>
   );
 };
-
+//export with connect
 export default Total;

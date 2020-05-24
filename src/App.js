@@ -1,6 +1,4 @@
 import React from 'react';
-// import connect from react-redux
-import { connect } from react-redux;
 
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
@@ -8,7 +6,7 @@ import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 //import any called actions
 const App = () => {
-  //state data 
+  //state data will remove once reduct is working
   const state = {
     additionalPrice: 0,
     car: {
@@ -26,7 +24,7 @@ const App = () => {
     ]
   };
 
-
+// do not need to pass state down with redux
   return (
     <div className="boxes">
       <div className="box">      
@@ -40,19 +38,5 @@ const App = () => {
     </div>
   );
 };
-// map state to props - car, additionalPrice and additionalFeatures
-
-const mapStateToProps = state => {
-  return {
-    // whatWillBeSentToProps: state.stateVariableWeWantForThisApp
-
-  };
-}; 
-
-//use connect to connect state to App
-export default connect(
-  mapStateToProps,
-  { }
-)(App);
-
-// export default App;
+ 
+export default App;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import AddedFeature from './AddedFeature';
-
+//import ({ car }) remove props
 const AddedFeatures = props => {
   return (
     <div className="content">

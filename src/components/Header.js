@@ -1,5 +1,5 @@
 import React from 'react';
-
+// import ({ car }) remove props
 const Header = props => {
   return (
     <>

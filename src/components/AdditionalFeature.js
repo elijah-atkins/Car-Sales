@@ -1,4 +1,7 @@
 import React from 'react';
+//import connect
+
+//import add feature action
 
 const AdditionalFeature = props => {
   return (
@@ -10,4 +13,6 @@ const AdditionalFeature = props => {
   );
 };
 
+//map state to props for add feature
+//export additionalFeatures as connect function
 export default AdditionalFeature;

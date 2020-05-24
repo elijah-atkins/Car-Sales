@@ -1,5 +1,7 @@
 import React from 'react';
+//import connect from react-redux
 
+//import actions
 const AddedFeature = props => {
   return (
     <li>
@@ -9,5 +11,7 @@ const AddedFeature = props => {
     </li>
   );
 };
+//map props to state for feature to remove a feature
 
+//export addedFrature as connect 
 export default AddedFeature;
