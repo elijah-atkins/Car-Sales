@@ -1,5 +1,6 @@
 import React from 'react';
 // import connect from react-redux
+import { connect } from react-redux;
 
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
@@ -7,7 +8,7 @@ import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 //import any called actions
 const App = () => {
-  //state data
+  //state data 
   const state = {
     additionalPrice: 0,
     car: {
@@ -41,10 +42,17 @@ const App = () => {
 };
 // map state to props - car, additionalPrice and additionalFeatures
 
-//use connect 
-// export default connect(
-//   mapStateToProps,
-//   { }
-// )(App);
+const mapStateToProps = state => {
+  return {
+    // whatWillBeSentToProps: state.stateVariableWeWantForThisApp
 
-export default App;
+  };
+}; 
+
+//use connect to connect state to App
+export default connect(
+  mapStateToProps,
+  { }
+)(App);
+
+// export default App;
