@@ -5,18 +5,19 @@ import { removeFeature } from "../actions"
 
 //import actions
 const AddedFeature = (props) => {
+  console.log(props)
   return (
     <li>
       {/* Add an onClick to run a function to remove a feature */}
-      <button className="button" onClick={() => removeFeature(props.feature)}>X</button>
-      {props.feature}
+      <button className="button" onClick={() => removeFeature(props.item)}>X</button>
+      {props.item.name} (+{props.item.price})
     </li>
   );
 };
 //map props to state for feature to remove a feature
 const mapStateToProps = state => {
   return {
-    feature: state.feature,
+    car: state.car,
   }
 }
 //export addedFrature as connect 

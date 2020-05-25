@@ -5,11 +5,11 @@ import { connect } from 'react-redux';
 import { addFeature } from '../actions';
 
 const AdditionalFeature = (props) => {
- console.log(props.item)
+
   return (
     <li>
       {/* Add an onClick that will let you add a feature to your car */}
-      <button className="button" onClick={() => props.addFeature(props.item.price)}>Add</button>
+      <button className="button" onClick={() => props.addFeature(props.item)}>Add</button>
       {props.item.name} (+{props.item.price})
     </li>
   );
