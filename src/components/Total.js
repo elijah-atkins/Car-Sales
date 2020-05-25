@@ -1,7 +1,9 @@
 import React from 'react';
 //import connect
+import { connect } from 'react-redux';
 //declare variables
-const Total = props => {
+const Total = (props) => {
+  console.log(props.car.price + props.additionalPrice)
   return (
     <div className="content">
       <h4>Total Amount: ${props.car.price + props.additionalPrice}</h4>
@@ -9,4 +11,11 @@ const Total = props => {
   );
 };
 //export with connect
-export default Total;
+const mapStateToProps = (state) => {
+
+  return{
+    car: state.car,
+    additionalPrice: state.additionalPrice
+  }
+}
+export default connect(mapStateToProps, {})(Total);
